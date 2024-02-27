@@ -41,6 +41,16 @@
 
         <div id="teachable-machine-model">
           <!-- Add your Teachable Machine model here -->
+          <script>
+            let robotContainer = document.getElementById("robot-container");
+            let robotFace = document.createElement("img");
+            let robotTalk = document.createElement("p");
+            robotTalk.className = "nes-balloon from-left";
+            robotTalk.innerText = "I don't understand humans...*sigh*";
+            robotFace.src = "/images/waiting.png";
+            robotContainer.appendChild(robotTalk);
+            robotContainer.appendChild(robotFace);
+          </script>
         </div>
       </div>
     </div>
